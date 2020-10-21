@@ -1,6 +1,7 @@
 package leetcode;
 
 public class _151_ReverseWordsString {
+
     public String reverseWords(String s) {
         String[] sA = s.split(" ");
         StringBuilder sb = new StringBuilder();
@@ -14,4 +15,5 @@ public class _151_ReverseWordsString {
 
         return sb.toString().trim();
     }
+
 }
