@@ -2,7 +2,13 @@ package leetcode;
 
 public class _151_ReverseWordsString {
 
-    public String reverseWords(String s) {
+    public static void main(String[] args) {
+        String input = "Hello World!";
+        String reversed = reverseWords(input);
+        System.out.println(reversed);
+    }
+
+    private static String reverseWords(String s) {
         String[] sA = s.split(" ");
         StringBuilder sb = new StringBuilder();
         for(int i=sA.length-1; i>=0; i--){
